@@ -7,6 +7,7 @@ public class MainScanner {
         System.out.println("input data");
         int cons = sc.nextInt();
         System.out.println("Your number: " + cons);
+        sc.close();
 
     }
 }
