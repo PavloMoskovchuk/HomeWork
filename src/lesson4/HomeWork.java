@@ -8,8 +8,8 @@ public class HomeWork {
         System.out.println(name.toLowerCase());
         System.out.println();
 
-        int l = name.length();
+        int length = name.length();
         System.out.println(name.charAt(0));
-        System.out.println(name.charAt(l-1));
+        System.out.println(name.charAt(length-1));
     }
 }
