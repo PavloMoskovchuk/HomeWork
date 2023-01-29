@@ -8,7 +8,10 @@ public class HomeWorkAdditional {
         long result;
         int number;
         int temp = 1;
-        long[] arr = new long[100];
+        long[] arr = new long[1000];
+        for (int a = 0; a < arr.length; a++) {
+            arr[a] = 0;
+        }
         for (int k = 0; ; k++) {
             result = 1;
             System.out.println("Enter your number: ");
