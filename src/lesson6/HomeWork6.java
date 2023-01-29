@@ -13,13 +13,13 @@ public class HomeWork6 {
         }
         System.out.println();
 
-        int factorial_of = 7;
+        int factorialOf = 7;
         int result = 1;
-        for (int l = 1; l <= factorial_of; l++) {
+        for (int l = 1; l <= factorialOf; l++) {
             //System.out.println(result);
             result *= l;
         }
-        System.out.println("Faktorial of 7 is: " + result);
+        System.out.println("Factorial of 7 is: " + result);
 
         System.out.print("Fibonacci numbers: ");
         for (int i = 0, i2 = 1, i3 = 1; i < 100; i3 = i + i2) {
