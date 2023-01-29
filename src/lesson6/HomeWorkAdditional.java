@@ -14,15 +14,15 @@ public class HomeWorkAdditional {
             System.out.println("Enter your number: ");
             number = sc.nextInt();
 
-            if (arr[number] != 0) {
+            if (arr[number] != 0) {                                 //Already existing Factorial
                 System.out.println("Already existing Factorial of " + number + " is: " + arr[number]);
-            } else if (arr[number] == 0 && temp == 1) {
+            } else if (arr[number] == 0 && temp == 1) {             //Counting Factorial
                 for (int i = 1; i <= number; i++) {
                     result *= i;
                     arr[i] = result;
                 }
                 System.out.println("Counted Factorial of " + number + " is: " + result);
-            } else if (arr[number] == 0 && temp != 1) {
+            } else if (arr[number] == 0 && temp != 1) {             //Counting Factorial in the range from available till entered number
                 for (int i = temp + 1; i <= number; i++, temp++) {
                     result = arr[temp] * i;
                     arr[i] = result;
