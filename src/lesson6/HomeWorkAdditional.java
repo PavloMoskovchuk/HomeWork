@@ -13,7 +13,6 @@ public class HomeWorkAdditional {
             result = 1;
             System.out.println("Enter your number: ");
             number = sc.nextInt();
-
             if (arr[number] != 0) {
                 System.out.println("Already existing Factorial of " + number + " is: " + arr[number]);
             } else if (arr[number] == 0 && temp == 1) {
