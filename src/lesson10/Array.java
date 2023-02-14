@@ -6,11 +6,9 @@ import java.util.Arrays;
 
 public class Array {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number of lines in new Array: ");
-        int lines = sc.nextInt();
-        System.out.println("Enter number of columns in new Array: ");
-        int columns = sc.nextInt();
+        int lines = getNumber();
+        int columns = getNumber();
+
         int[][] myArray = new int[lines][columns];
 
         fillArrayWithRandomNumbers(myArray, lines, columns);
@@ -24,6 +22,16 @@ public class Array {
 
         reverseSorting(myArray, lines, columns);
         printMyArray(myArray);
+    }
+    static int getNumber() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your number:");
+        if (sc.hasNextInt()){
+            return sc.nextInt();
+        } else {
+            System.out.println("Wrong input. Try again!");
+            return getNumber();
+        }
     }
 
     public static int[][] fillArrayWithRandomNumbers(int[][] myArray, int lines, int columns) {
@@ -67,3 +75,11 @@ public class Array {
         return myArray;
     }
 }
+
+
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter number of lines in new Array: ");
+//        int lines = sc.nextInt();
+//        System.out.println("Enter number of columns in new Array: ");
+//        int columns = sc.nextInt();
+//        int[][] myArray = new int[lines][columns];
