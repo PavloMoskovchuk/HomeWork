@@ -27,10 +27,7 @@ public class Lorry extends Car{
     }
 
     @Override
-    public String toString() {
-        return "Lorry{" +
-                "loadCapacity=" + loadCapacity +
-                ", volumeCapacity=" + volumeCapacity +
-                '}';
+    public String getType() {
+        return super.getType();
     }
 }
