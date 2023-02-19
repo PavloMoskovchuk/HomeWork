@@ -10,6 +10,11 @@ public class PassengerCar extends Car{
         this.maxWeight = maxWeight;
     }
 
+    @Override
+    public void information() {
+        super.information();
+    }
+
     public int getPassengerCapacty() {
         return passengerCapacty;
     }

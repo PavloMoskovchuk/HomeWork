@@ -10,6 +10,11 @@ public class Lorry extends Car{
         this.volumeCapacity = volumeCapacity;
     }
 
+    @Override
+    public void information() {
+        super.information();
+    }
+
     public int getLoadCapacity() {
         return loadCapacity;
     }
