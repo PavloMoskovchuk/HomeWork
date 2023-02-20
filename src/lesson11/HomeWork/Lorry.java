@@ -10,6 +10,11 @@ public class Lorry extends Car{
         this.volumeCapacity = volumeCapacity;
     }
 
+    @Override
+    public void information() {
+        super.information();
+    }
+
     public int getLoadCapacity() {
         return loadCapacity;
     }
@@ -27,10 +32,7 @@ public class Lorry extends Car{
     }
 
     @Override
-    public String toString() {
-        return "Lorry{" +
-                "loadCapacity=" + loadCapacity +
-                ", volumeCapacity=" + volumeCapacity +
-                '}';
+    public String getType() {
+        return super.getType();
     }
 }
