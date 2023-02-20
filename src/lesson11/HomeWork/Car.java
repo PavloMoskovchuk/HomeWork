@@ -12,6 +12,9 @@ public class Car {
         this.model = model;
         this.year = year;
     }
+    public void information(){
+        System.out.println(type);
+    }
 
     public String getType() {
         return type;
