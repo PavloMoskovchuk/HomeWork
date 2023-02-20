@@ -1,25 +1,16 @@
-package lesson10;
+package lesson10.HomeWork;
 
 public class Teacher {
-
     private String subject;
     private String firstName;
     private String lastName;
-    private String sex;
-    private int height;
-    private int age;
+    private int experience;
 
-    public Teacher() {
-
-    }
-
-    public Teacher(String subject, String firstName, String lastName, String sex, int height, int age) {
+    public Teacher(String subject, String firstName, String lastName, int experience) {
         this.subject = subject;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.sex = sex;
-        this.height = height;
-        this.age = age;
+        this.experience = experience;
     }
 
     public String getSubject() {
@@ -46,28 +37,12 @@ public class Teacher {
         this.lastName = lastName;
     }
 
-    public String getSex() {
-        return sex;
+    public int getExperience() {
+        return experience;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
+    public void setExperience(int experience) {
+        this.experience = experience;
     }
 
     @Override
@@ -76,9 +51,7 @@ public class Teacher {
                 "subject='" + subject + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", sex='" + sex + '\'' +
-                ", height=" + height +
-                ", age=" + age +
+                ", experience=" + experience +
                 '}';
     }
 }

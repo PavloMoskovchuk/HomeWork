@@ -1,19 +1,16 @@
-package lesson10;
+package lesson10.HomeWork;
 
 public class Student {
     private String firstName;
     private String lastName;
     private String faculty;
-    private int grade;
-    private int age;
-    public Student() {
-    }
-    public Student(String firstName, String lastName, String faculty, int grade, int age) {
+    private int course;
+
+    public Student(String faculty, String firstName, String lastName, int course) {
+        this.faculty = faculty;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.faculty = faculty;
-        this.grade = grade;
-        this.age = age;
+        this.course = course;
     }
 
     public String getFirstName() {
@@ -40,20 +37,12 @@ public class Student {
         this.faculty = faculty;
     }
 
-    public int getGrade() {
-        return grade;
+    public int getCourse() {
+        return course;
     }
 
-    public void setGrade(int grade) {
-        this.grade = grade;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
+    public void setCourse(int course) {
+        this.course = course;
     }
 
     @Override
@@ -62,8 +51,7 @@ public class Student {
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", faculty='" + faculty + '\'' +
-                ", grade=" + grade +
-                ", age=" + age +
+                ", course=" + course +
                 '}';
     }
 }
