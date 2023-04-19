@@ -11,7 +11,7 @@ public class HomeWork28 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = "";
-        Path path = Path.of("D:\\раб стол\\progs\\add.txt");
+        Path path = Path.of("1.txt");
         try {
             Files.createFile(path);
         } catch (IOException e) {
